@@ -33,9 +33,9 @@ color:
 # Footer settings
 footer:
   copyright: Dr. Henry Jekyll
-  location: Uruguay
+  location: Contacto
   social: silken.wtf
-  #credits: Yo :)
+  credits: En busca de trabajos freelance
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
