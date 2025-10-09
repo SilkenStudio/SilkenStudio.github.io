@@ -35,28 +35,26 @@ footer:
   copyright: Dr. Henry Jekyll
   location: Uruguay
   social: silken.wtf
-  credits: Yo :)
+  #credits: Yo :)
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: instagram
+    url: https://www.instagram.com/wtf.silken/
+  - title: behance
+    url: https://www.behance.net/sofiagarcia155
+  - title: linkedin
+    url: https://www.linkedin.com/in/sofiagarciauyu/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/SilkenStudio
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: sofia.garcia.milan.2000@gmail.com
+  - line: +598 91 62 00 84
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
