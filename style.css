@@ -168,17 +168,45 @@ body {
 }
 
 /* Contact Section */
+/* Contact Section */
 .contact {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 5rem 2rem;
     text-align: center;
 }
 
-.contact h2 {
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-header h2 {
     font-size: 3rem;
-    margin-bottom: 2rem;
     font-weight: 700;
+    flex: 1;
+    text-align: center;
+}
+
+.divider-horizontal {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #444, transparent);
+    flex-shrink: 0;
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.divider-horizontal {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #444, transparent);
 }
 
 .contact-links {
@@ -213,7 +241,7 @@ body {
         font-size: 1.2rem;
     }
 
-    .portfolio h2, .contact h2 {
+    .portfolio h2 {
         font-size: 2rem;
     }
 
@@ -233,5 +261,20 @@ body {
     
     .about-column h2 {
         font-size: 2rem;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .divider-horizontal {
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #444, transparent);
     }
 }
