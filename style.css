@@ -97,6 +97,25 @@ body {
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Outline Button Style */
+.cta-button-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.cta-button-outline:hover {
+    background-color: #fff;
+    color: #0a0a0a;
+}
+
 /* Intro/About Section */
 .intro {
     max-width: 1400px;
@@ -522,6 +541,18 @@ body {
 
     .hero .subtitle {
         font-size: 1.2rem;
+        
+    }
+
+        .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 250px;
     }
 
     .portfolio h2 {
