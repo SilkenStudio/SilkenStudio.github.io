@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, 
+        #0f0a1e 0%,
+        #2a1a4e 15%,
+        #1a0f2e 30%,
+        #16213e 45%,
+        #1a0f2e 60%,
+        #2a1a4e 75%,
+        #0f0a1e 90%,
+        #0a0a0a 100%);
+    color: #eeeeee;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 0.9rem;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Language Switch */
+.language-switch {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 0.9rem;
+}
+
+.language-switch:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Category Header */
+.category-header {
+    text-align: center;
+    padding: 8rem 2rem 4rem 2rem;
+}
+
+.category-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.category-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    word-wrap: break-word;
+}
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    max-width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1600px;
+    overflow: hidden;
+    padding: 0 6rem;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+    align-items: flex-start;
+}
+
+.carousel-item {
+    min-width: calc(33.333% - 1.33rem);
+    max-width: 350px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.6) 0%, rgba(22, 33, 62, 0.6) 100%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+.video-container {
+    width: 100%;
+    max-height: 500px;
+    aspect-ratio: 9/16;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.video-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: 1.5rem;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.video-info p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.carousel-btn-prev {
+    left: 1rem;
+}
+
+.carousel-btn-next {
+    right: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .carousel-item {
+        min-width: calc(50% - 1rem);
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel-item {
+        max-width: 280px;
+    }
+    
+    .video-container {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-header {
+        padding: 6rem 1.5rem 3rem 1.5rem;
+    }
+
+    .category-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .category-header p {
+        font-size: 1rem;
+    }
+    
+    .carousel-container {
+        padding: 0 4rem;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        max-height: 400px;
+    }
+    
+    .carousel-btn {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .carousel-btn-prev {
+        left: 0.5rem;
+    }
+
+    .carousel-btn-next {
+        right: 0.5rem;
+    }
+    
+    .back-button,
+    .language-switch {
+        top: 1rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .back-button {
+        left: 1rem;
+    }
+    
+    .language-switch {
+        right: 1rem;
+    }
+
+    .video-info {
+        padding: 1rem;
+    }
+    
+    .video-info h3 {
+        font-size: 1rem;
+    }
+    
+    .video-info p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-header h1 {
+        font-size: 2rem;
+    }
+
+    .category-header p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-container {
+        padding: 0 3rem;
+    }
+
+    .carousel-item {
+        max-width: 260px;
+    }
+
+    .video-container {
+        max-height: 350px;
+    }
+
+    .carousel-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .video-info {
+        padding: 0.8rem;
+    }
+    
+    .video-info h3 {
+        font-size: 0.95rem;
+    }
+    
+    .video-info p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
