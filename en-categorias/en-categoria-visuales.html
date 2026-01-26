@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reel Promocional - Sofía García</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style-categoria.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="../index-en.html#portfolio" class="back-button">← Go back</a>
+    
+    <!-- Language Switch Button -->
+    <a href="../categorias/categoria-visuales.html" class="language-switch">Español</a>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <h1>Visuals</h1>
+        <p>Visual loops for different professional events</p>
+    </section>
+
+    <!-- Video Carousel -->
+    <section class="carousel-section">
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn">‹</button>
+        
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                
+                <!-- VIDEO 1 - Reemplaza el src con tu video -->
+                <div class="carousel-item">
+                    <div class="video-container">
+                        <iframe 
+                            class="video-embed"
+                            src="https://drive.google.com/file/d/1gjepzeV8bvIXjxxfad6MDf3MnQ5ZTz5w/preview" 
+                            allow="autoplay"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Foro Ciudades Sustentables AHK</h3>
+                        <p>Central screen throughout the entire event https://youtu.be/QRzWFDMhbc0</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 2 - Reemplaza el src con tu video -->
+                <div class="carousel-item">
+                    <div class="video-container">
+                        <iframe 
+                            class="video-embed"
+                            src="https://drive.google.com/file/d/1b580gidbzZF3aiusXdf6Docru7Nhw-8x/preview" 
+                            allow="autoplay"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Foro Económico AHK</h3>
+                        <p>Central screen throughout the entire event https://youtu.be/Z6NPSy8LLF4</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <button class="carousel-btn carousel-btn-next" id="nextBtn">›</button>
+    </section>
+
+    <script src="../carousel.js"></script>
+</body>
+</html>
